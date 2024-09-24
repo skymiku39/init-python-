@@ -22,7 +22,8 @@ my-project/
 │   └── settings.yaml   # 設定檔案
 ├── .gitignore          # 忽略文件列表
 ├── README.md           # 專案說明文件
-└── requirements.txt    # 依賴包列表，建議添加常見依賴項如 pytest 和 requests
+├── requirements.txt    # 依賴包列表，建議添加常見依賴項如 pytest 和 requests
+└── settings.env        # 環境變數
 ```
 
 ### 2. **初始化 Git 儲存庫**
