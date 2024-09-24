@@ -52,6 +52,11 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+權限設定
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+```
+
 ### 4. **編輯專案配置**
 請確保配置文件已經根據您的需求進行了編輯。您可以修改 configs/settings.yaml 來適應特定的環境和需求。
 
@@ -131,7 +136,15 @@ pytest tests
 ```bash
 pip install <package-name>
 pip freeze > requirements.txt
+```
+
 如何設定不同環境的配置？ 可以根據不同環境（開發、測試、正式環境）建立不同的設定檔案，如 settings_dev.yaml、settings_prod.yaml。
+```yaml
+database:
+  host: "localhost"
+  port: 5432
+  user: "admin"
+  password: "password"
 ```
 
 ### 結論
