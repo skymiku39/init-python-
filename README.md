@@ -71,14 +71,15 @@ database:
 ```python
 def test_sample():
     assert True
+```
+
 執行測試：
 如果你想在不影響目錄結構的情況下進行測試，可以使用 Python 的 unittest 模組或者 pytest。以下是使用這兩種方法的步驟：
 
 使用 unittest
 在 tests/test_main.py 中撰寫測試：
 
-python
-複製程式碼
+```python
 import unittest
 from my_package.main import your_function  # 根據你的實際情況修改
 
@@ -88,6 +89,7 @@ class TestYourFunction(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+```
 運行測試：
 
 在 PowerShell 中，確保你在專案的根目錄下，然後運行：
